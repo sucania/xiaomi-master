@@ -1,0 +1,1843 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	width: 100%;
+	height: 100%;
+}
+.header .nav-top{
+	width: 100%;
+	height: 40px;
+	background-color: #333333;
+	display: block;
+}
+ .nav-top .nav-center{
+	width: 1226px;
+	height: 40px;
+	margin: 0px auto;
+}
+
+
+ .nav-top .nav-center .part-one{
+	width: 587px;
+	height: 40px;
+	float: left;
+}
+.nav-top .nav-center .part-one li p a{
+	text-decoration: none;
+	font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color:#B0B0B0;
+	line-height: 40px;
+	float: left;
+	margin-right: 16px;
+}
+ .nav-top .nav-center .part-one li p a:hover{
+	color: white;
+}
+.nav-top .nav-center .part-two {
+	width: 148px;
+	height: 40px;
+	position: absolute;
+	left: 960px;
+	top: 14px;
+}
+
+ .ui-widget-header{
+	background-color: #FF6700  !important; 
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	background-color: #FF6700  !important; 
+	border: 1px solid #FF6700  !important; 
+}
+.ui-button .ui-icon{
+	background-image: url("../js/images/ui-icons_777777_256x240.png") !important; 
+}
+/*登陆后有效期一周的样式*/
+#log input{
+    border-radius: 4px;
+    text-indent: 5px;
+    border: 1px solid #ccc;
+    height: 24px;
+    width: 200px;
+    font-size: 14px;
+}
+#log p.week{
+  float:right;
+  margin:5px 30px 0 0;
+}
+#log p.week-checkbox{
+  /*float:left;*/
+}
+input#expires{
+  width:12px;
+  position: relative;
+  top: -20px;
+  left: 20px;
+}
+
+#reg p,#log p,#question p{
+  margin: 2px 0 10px 0;
+  padding: 0;
+}
+#reg input,#log input,#question input{
+ border-radius: 4px;
+ text-indent: 5px;
+ border: 1px solid #ccc;
+ height: 24px;
+ width: 200px;
+ font-size: 14px;
+}
+#reg .star,#log .star{
+  color: maroon;
+   font-size: 22px;
+   position: relative;
+   top:4px;
+}
+#reg  p label,#log  p label,#question p label{
+  color: #666;
+  font-size: 14px;
+}
+/*更改jquery UI主题的对话框的header的背景和下面的字体*/
+.ui-widget-header{
+  background:#076CD1;
+}
+.ui-dialog-title{
+  color: white;
+  font-size: 18px;
+}
+.ui-widget .ui-widget{
+  font-size: 14px;
+}
+#header .header-register a{
+  text-decoration: none;
+  color: white;
+}
+/*更改tooltip工具提示的颜色*/
+#reg .red,#log .red.#question .red{
+  color: maroon;
+}
+/*自动下拉补全UI，改变其字体颜色，背景色*/
+.ui-menu .ui-menu-item {
+  color:#666;
+}
+/*日历UI的今天的单元格的CSS样式,类名里不能有ui-state-default*/
+.ui-datepicker-today  .ui-state-highlight {
+  /*color: #f60;
+  background-color: #007fff;*/
+}
+/*日历UI的选定的单元格的样式，类名里不能有ui-state-default*/
+/*当你选今天为选定日期，选定日期的样式覆盖今天的样式*/
+.ui-datepicker-current-day .ui-state-active{
+    background-color: #007FFF;
+    color: white;
+  }
+
+  /*给ol.reg-error设置样式*/
+#reg ol.reg-error,#log ol.log-error{
+  color: maroon;
+  font-size: 14px;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+/*提示错误增加样式*/
+#reg ol.reg-error li,#log ol.log-error li{
+  padding: 4px 0 4px 0 ;
+}
+
+#reg .succ,#log .succ{
+  background: url(images/currect.png);
+  background-repeat: no-repeat;
+  /*内联块*/
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+}
+/*给提交的时候，一个正在loading中设样式*/
+
+ .nav-center .part-two li p a{
+	text-decoration: none;
+	font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color:#757575;
+	line-height: 40px;
+	float: left;
+	margin-right: 16px;
+	color: #B0B0B0;
+	line-height: 10px;
+}
+.nav-center .part-two li p a:hover{
+	color: white;
+}
+ .nav-center .part-three {
+	width: 120px;
+	height: 40px;
+	float: right;
+	position: relative;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.nav-center .part-three:hover .gouwu {
+	color:#FF6700;
+	background-color: white;
+}
+.nav-center .part-three:hover .shop-pull{
+	height: 100px;
+}
+.nav-center .part-three .gouwu {
+	width: 120px;
+	height: 40px;
+	background-color: #424242;
+	float: right;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #B0B0B0;
+}
+.nav-center .part-three .shop-pull{
+	width: 365px;
+	height: 0px;
+	float: right;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15 );
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	overflow: hidden;
+	line-height: 100px;
+	transition: all 0.2s;
+	z-index: 30;
+	background-color: white;
+}
+ .nav-center .part-three .shop-pull .shop-title{
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	font-size: 10px;
+}
+             /*图片区*/
+.header .nav-two{
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+
+ .nav-two .two-center{
+	width: 1226px;
+	height: 100%;
+	margin: 0 auto;
+	position:relative;
+}
+#talk{
+	/*position: absolute;
+	top:40px;*/
+
+	font: 13px/2 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	width: 42px;
+	height: 90px;
+	background-color: #333333;
+	z-index:10;
+	position:absolute;
+	padding-top: 5px;
+	left:94px;
+	top:-7px;
+	display:none;
+}
+#talk li,#read li {
+	text-decoration: none;
+	color:#B0B0B0;
+	text-align:center;
+	cursor:pointer;
+}
+#read{
+	font: 12px/2.3 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	width: 65px;
+	height: 90px;
+	background-color: #333333;
+	z-index:10;
+	position:absolute;
+	padding-top: 5px;
+	left:174px;
+	top:-7px;
+	display:none;
+}
+.nav-two .two-center .two-logo{
+	background-image: url(../images/mi-logo.png);
+	background-color:#FF6700;
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-top: 22px;
+	background-position: center;
+	margin-right: 180px;
+	position: relative;
+    animation: text 4s 1;
+}
+@keyframes text {
+        0%{
+           top:0px; left: 0px;
+          transform: rotateZ(0deg);
+        }
+        25%{
+           top:0px; left: 0px;
+          transform: rotateZ(30deg);
+        }
+        50%{
+          top:0px; left: 180px; background-color: #FFCA4E;
+          transform: rotateZ(720deg);
+        }
+        75%{
+           top:0px; left: 180px; background-color:#BF9A63;
+          transform: rotateZ(720deg);
+        }
+        100%{
+          top:0px; left: 0px;
+          transform: rotateZ(0deg);
+        }
+      }
+.nav-two .two-center .two-list{
+	width: 640px;
+	height: 100px;
+	float: left;
+}
+.nav-two .two-center li a{
+	font: 16px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	line-height: 100px;
+	text-decoration: none;
+	color: #333333;
+	padding-right: 20px;
+	float: left;
+}
+.nav-two .two-center li #community{
+	padding-right: 0px;
+}
+.nav-two .two-center li a:hover{
+	color: #FF6700;
+}
+.nav-two .two-center li .down-pull{
+	height: 0px;
+	width:100%;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+	transition: all 0.6s;
+	overflow: hidden;
+	z-index: 100;
+	background-color: white;
+}
+.nav-two .two-list li:hover .down-pull{
+	height: 230px;
+}
+.nav-two .down-pull ul .first{
+	width: 204px;
+	height: 230px;
+	float: left;
+	position: relative;
+}
+.nav-two ul .first a .pull-photo{
+	width: 160px;
+	height: 110px;
+	margin-left: 25px;
+	display: block;
+	text-align: center;
+	margin-top: 35px;
+}
+.nav-two ul .first a .diversity{
+	width: 1px;
+	height: 110px;
+	position: absolute;
+	top: 35px;
+	right: 0px;
+	background-color: #E0E0E0;
+}
+.nav-two ul .first a .pull-note{
+	font: 13px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	left: 74px;
+	bottom: 53px;
+
+}
+.nav-two ul .first .pull-money{
+	font: 15px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-decoration: none;
+	color: #FF6700;
+	left: 72px;
+	bottom: 23px;
+	position: absolute;
+}
+.nav-two .two-list .second-pull{
+	width: 204px;
+	height: 230px;
+	float: left;
+	position: relative;
+}
+.nav-two .two-center .two-search{
+	float: right;
+	width: 300px;
+	height: 100px;
+}
+.nav-two .two-search{
+	position: relative;
+}
+.nav-two .two-search .search{
+	width: 48px;
+	height: 48px;
+	border: 1px solid #E0E0E0;
+	float: right;
+	margin-top: 26px;
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+}
+.nav-two .two-search .iconfont{
+	font-size: 25px;
+	line-height: 48px;
+	color: #616161;
+}
+.nav-two .two-search a:hover {
+	background-color: #FF6700;
+}
+.nav-two .two-search .search:hover .iconfont{
+	color: white;
+}
+.nav-two .two-search input{
+	float: right;
+	height: 48px;
+	width: 240px;
+  font-size:25px;
+	margin-top: 26px;
+	border: 1px solid #E0E0E0;
+}
+.nav-two .two-search .mix{
+	font: 10px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	line-height: 20px;
+	position: absolute;
+	right: 175px;
+	top: 40px;
+	background-color: #EEEEEE;
+	color:  #757575;
+	text-decoration: none;
+}
+.nav-two .two-search .TV{
+	font: 10px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	line-height: 20px;
+	position: absolute;
+	right: 95px;
+	top: 40px;
+	background-color: #EEEEEE;
+	color:  #757575;
+	text-decoration: none;
+}
+  /*左边清单和右边背景大图*/
+.header .nav-big{
+	width: 1226px;
+	height: 646px;
+	display: block;
+	margin: 0 auto;
+}
+/*.header .nav-photo{
+	width: 1226px;
+	height: 460px;
+	display: block;
+	margin: 0 auto;
+	background-image: url(../images/xiaomi-1.jpg)
+}*/
+.header .nav-big .ck-slide .photo-left{
+	width: 234px;
+	height: 460px;
+	background-color: rgba(0,0,0,0.6);
+ 	 position: relative;
+  	z-index: 99;
+}
+.nav-big  .photo-left .left-center{
+	width: 234px;
+	height: 426px;
+	position: absolute;
+	top: 17px;
+}
+.nav-big  .phone{
+	width: 234px;
+	height: 42px;
+	display: block;
+}
+.nav-big  .phone .card{
+	text-decoration: none;
+	color: white;
+	font:15px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	line-height: 42px;
+	padding-left: 30px;
+	float: left;
+	width: 234px;
+}
+.nav-big  ul li .card i{
+	color: #AFAFAF;
+	float: right;
+	margin-right: 20px;
+}
+.nav-big  .phone  .card:hover {
+	background-color: #FF6700;
+}
+.nav-big  .phone .photo-one{
+	position: absolute;
+	left: 234px;
+	top: -17px;
+	width: 800px;
+	height: 460px;
+	z-index: 33;
+	background-color: white;
+	display: none;
+		box-shadow: 2px 6px 5px rgba(0,0,0,0.15);
+}
+.nav-big  .phone:hover .photo-one{
+	display: block;
+}
+.nav-big  .phone  li{
+	width: 266px;
+	height: 66px;
+	float: left;
+}
+.nav-big  .phone  li a:hover .xiaomi-note{
+	color: #FF6700;
+}
+.nav-big  .phone  li a .Note{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 13px;
+}
+.nav-big  .phone  li a .xiaomi-note{
+	text-decoration: none;
+	float: left;
+	font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+	margin-left: 10px;
+	margin-top: 22px;
+}
+.nav-big  .phone li .choose a{
+	text-decoration: none;
+	font:10px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #FF6700;
+	float:right;
+	width: 58px;
+	height: 22px;
+	border: 1px solid #FF6700;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 22px;
+}
+.nav-big  .phone  li .choose a:hover{
+	color: white;
+	background-color:  #FF6700;
+}
+.nav-big  .phone .photo-two{
+	position: absolute;
+	left: 234px;
+	top: -17px;
+	width: 534px;
+	height: 460px;
+	z-index: 33;
+	background-color: white;
+	display: none;
+	transition:all .2s;
+	box-shadow: 2px 6px 5px rgba(0,0,0,0.15);
+}
+.nav-big  .phone:hover .photo-two{
+	display: block;
+}
+/*中间icon 和右边半截图*/
+.header .nav-big  .center-pic{
+	width: 1226px;
+	height: 170px;
+  margin:14px auto;
+	display: block;
+}
+.nav-big  .center-pic .center-icon{
+	width: 234px;
+	height: 170px;
+	padding:3px;
+	background-color: #5F5750;
+	float: left;
+}
+.nav-big  .center-pic .icon-one{
+	width: 75px;
+	height: 82px;
+	padding: 0px 3px;
+	float: left;
+}
+.nav-big  .center-pic .icon-one a{
+	text-decoration: none;
+}
+.nav-big  .center-pic .icon-one :hover .iconfont{
+	color: white;
+}
+.nav-big  .center-pic .icon-one :hover .shopping{
+	color: white;
+}
+.nav-big  .center-pic .icon-one .iconfont{
+	text-decoration: none;
+	font:28px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #CFCDCB;
+	padding-left: 19px;
+	padding-top:15px;
+	display: block;
+}
+.nav-big  .center-pic .icon-one .shopping{
+	text-decoration: none;
+	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #CFCDCB;
+	text-align: center;
+}
+.nav-big  .center-pic .center-right-pic{
+	width: 990px;
+	height: 170px;
+	float: right;
+}
+.nav-big  .center-right-pic li a img{
+	width: 330px;
+	height: 170px;
+	padding-left: 14px;
+	float: left;
+	background-size: 50%;
+}
+/*小米明星单品*/
+.main{
+	width: 1226px;
+	height: 438px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 26px;
+}
+.main .xiaomi-star{
+	width: 100%;
+	height: 58px;
+}
+.main .xiaomi-star p {
+	width: 180px;
+	height: 58px;
+	font: 22px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-decoration: none;
+	color: black;
+	line-height: 58px;
+	float: left;
+}
+.main .xiaomi-star .more{
+	width: 36px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	float: right;
+	margin-top: 17px;
+}
+.main .xiaomi-star .more a{
+	text-decoration: none;
+}
+.main .xiaomi-star .more:hover .iconfont{
+	color: #FF6700;
+}
+.main .xiaomi-star .more a .iconfont{
+	text-align: center;
+	display: block;
+	color: #B0B0B0;
+	font-weight: bolder;
+	line-height: 24px;
+}
+.main .xiaomi-star .less{
+	width: 36px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	float: right;
+	margin-top: 17px;
+}
+.main .xiaomi-star .less a{
+	text-decoration: none;
+}
+.main .xiaomi-star .less a .iconfont{
+	text-align: center;
+	display: block;
+	color: #B0B0B0;
+	font-weight: bolder;
+	line-height: 24px;
+}
+.main .xiaomi-star .less:hover .iconfont{
+	color: #FF6700;
+}
+.main .xiaomi-roll{
+	width: 1226px;
+	height: 380px;
+	padding-bottom: 40px;
+}
+.main .xiaomi-roll .roll-one{
+	width: 234px;
+	height: 340px;
+	border-top:1px solid orange;
+	background-color: #FAFAFA;
+	margin-right: 13px;
+	float: left;
+}
+.main .xiaomi-roll .roll-one a img{
+	width: 160px;
+	height: 160px;
+	background-size: 50%;
+	margin: 35px 35px 15px 35px;
+}
+.main .xiaomi-roll .roll-one a{
+	text-decoration: none;
+}
+.main .xiaomi-roll .roll-one a p{
+	text-align: center;
+	font:15px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+}
+.main .xiaomi-roll .roll-one .description{
+	text-align: center;
+	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #B0B0B0;
+	line-height: 25px;
+}
+.main .xiaomi-roll .roll-one .price{
+	text-align: center;
+	font:16px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #FF6709;
+	line-height: 50px;
+}
+.main .xiaomi-roll .roll-five{
+	width: 234px;
+	height: 340px;
+	border-top:1px solid orange;
+	background-color: #FAFAFA;
+	float: left;
+}
+.main .xiaomi-roll .roll-five a img{
+	width: 160px;
+	height: 160px;
+	background-size: 50%;
+	margin: 35px 35px 15px 35px;
+}
+.main .xiaomi-roll .roll-five a{
+	text-decoration: none;
+}
+.main .xiaomi-roll .roll-five a p{
+	text-align: center;
+	font:15px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+}
+.main .xiaomi-roll .roll-five .description-five{
+	text-align: center;
+	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #B0B0B0;
+	line-height: 25px;
+}
+.main .xiaomi-roll .roll-five .price-five{
+	text-align: center;
+	font:16px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #FF6709;
+	line-height: 50px;
+}
+/*下面 大片 灰色*/
+.header .footer-bottom{
+	width: 100%;
+	height: 4614px;
+	padding-top: 60px;
+	background-color: #F5F5F5;
+}
+/*<!-- 智能硬件 -->*/
+.footer-bottom .capacity{
+	width: 1226px;
+	height: 686px;
+	margin: 0 auto;
+}
+.footer-bottom .capacity .capacity-one{
+	width: 1226px;
+	height: 58px;
+}
+.footer-bottom .capacity .capacity-one p{
+	font:22px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+	line-height: 58px;
+	float: left;
+}
+.footer-bottom .capacity-one a .iconfont{
+	color: #666666;
+	font-size: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 58px;
+}
+.footer-bottom .capacity-one a{
+	float: right;
+	text-decoration: none;
+	color: black;
+	line-height: 58px;
+	font:18px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.footer-bottom .capacity-one a:hover  {
+	color: #FD9409;
+}
+.footer-bottom .capacity-one a:hover .iconfont {
+	color: #FD9409;
+}
+.footer-bottom .capacity .capacity-two{
+	width: 1226px;
+	height: 614px;
+}
+.footer-bottom .capacity .capacity-two .capacity-left{
+	width: 234px;
+	height: 614px;
+	float: left;
+}
+.footer-bottom .capacity .capacity-two .capacity-left:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+				transition:all .2s;
+}
+.footer-bottom .capacity .capacity-two .capacity-right{
+	width: 992px;
+	height: 614px;
+	float: right;
+}
+.capacity .capacity-right .rabbit{
+	width: 234px;
+	height: 300px;
+	margin-left: 12px;
+	margin-bottom: 14px;
+	float: left;
+	background-color: white;
+
+}
+.capacity .capacity-right .rabbit:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+				transition:all .2s;
+}
+.capacity .capacity-right .rabbit  .none{
+	width: 65px;
+	height: 20px;
+	background-color: #FFAC13;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+
+}
+.capacity .capacity-right .rabbit a img{
+	width: 160px;
+	height: 166px;
+	margin: 0 auto;
+	display: block;
+}
+.capacity .capacity-right .rabbit a{
+	text-decoration: none;
+}
+.capacity .capacity-right .rabbit a p{
+	font: 14px/1 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.capacity .capacity-right .rabbit .chat{
+	font: 13px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-align: center;
+	color: #B0B0B0;
+}
+.capacity .capacity-right .rabbit .price{
+	font: 15px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-align: center;
+	color: #FF6757;
+	line-height: 40px;
+}
+/*搭配*/
+.footer-bottom .match{
+	width: 1226px;
+	height: 690px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.footer-bottom .match .match-nav{
+	width: 1226px;
+	height: 58px;
+}
+.footer-bottom .match-nav .left{
+	text-decoration: none;
+	font: 22px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+	float: left;
+}
+.footer-bottom .match-nav .right{
+	width: 332px;
+	height: 58px;
+	float: right;
+}
+.match-nav .right .hot-pull .hot a{
+	text-decoration: none;
+	font: 16px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #424242;
+	padding-left: 30px;
+	float: left;
+}
+.match .match-photo{
+	width: 1226px;
+	height: 620px;
+	display: block;
+}
+.match .match-photo .match-left{
+	width: 234px;
+	height: 620px;
+	float: left;
+}
+.match .match-photo .match-left a img{
+	width: 234px;
+	height: 300px;
+}
+.match .match-photo .match-left a .headset{
+	margin-top:14px;
+}
+.match .match-photo .match-left a img:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+				transition:all .2s;
+}
+.match .match-photo .match-right{
+	width:990px;
+	height: 620px;
+	float: right;
+}
+.match-photo .match-right .right-bluetooth{
+	width: 234px;
+	height: 300px;
+	margin-left: 13px;
+	margin-bottom: 14px;
+	background-color: white;
+	float: left;
+	position: relative;
+	transition:all 0.2s;
+}
+.match-photo .match-right .right-bluetooth a img{
+	margin: 30px auto;
+	display: block;
+}
+.match-photo .match-right .right-bluetooth a p{
+	text-align: center;
+	color: black;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .right-bluetooth a{
+	text-decoration: none;
+}
+.match-photo .match-right .right-bluetooth .price{
+	text-align: center;
+	color: #FF6709;
+	font: 14px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .right-bluetooth .evaluate{
+	text-align: center;
+	color: #B7B0B7;
+	font: 12px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .right-bluetooth:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+				transition:all .2s;
+}
+.match-photo .match-right .right-bluetooth .red{
+	width: 234px;
+	height: 0px;
+	background-color: #FF6700;
+	position: absolute;
+	left: 0px;
+	bottom:0px;
+	z-index: 34;
+	transition:all 0.5s;
+	overflow: hidden;
+}
+.match-photo .match-right .right-bluetooth:hover .red{
+	height: 75px;
+}
+.match-photo .match-right .right-bluetooth .red a .one{
+	text-align: center;
+	color: white;
+	font: 12px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	padding-left: 26px;
+	padding-right: 26px;
+}
+.match-photo .match-right .right-bluetooth .red a .two{
+	text-align: center;
+	color: #FFC299;
+	font: 12px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .canon{
+	width: 234px;
+	height: 143px;
+	background-color: white;
+	float: left;
+	margin-left: 13px;
+	margin-bottom: 14px;
+}
+.match-photo .match-right .canon:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+				transition:all .2s;
+}
+.match-photo .match-right .canon .left{
+	width: 130px;
+	height: 130px;
+	position: relative;
+	float: left;
+}
+.match-photo .match-right .canon .left a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	font: 14px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .canon .left p{
+	text-decoration: none;
+	color: #FF7E09;
+	display: block;
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	font: 14px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .canon a img{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.match-photo .match-right .even-more{
+	width: 234px;
+	height: 143px;
+	background-color: white;
+	float: left;
+	margin-left: 13px;
+}
+.match-photo .match-right .even-more .left{
+	width: 130px;
+	height: 130px;
+	position: relative;
+	float: left;
+}
+.match-photo .match-right .even-more .left .charact{
+	text-decoration: none;
+	color: black;
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	font: 18px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .even-more .left a{
+	text-decoration: none;
+	color: #757575;
+	display: block;
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	font: 14px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.match-photo .match-right .even-more a .iconfont{
+	text-decoration: none;
+	color: #FF6700;
+	font-size: 45px;
+	position: relative;
+	top: 40px;
+	left: 20px;
+}
+.match-photo .match-right .even-more a {
+	text-decoration: none;
+}
+.match-photo .match-right .even-more:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+				transition:all .2s;
+}
+/*为你推荐*/
+.recommend{
+	width: 1226px;
+	height: 370px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.recommend .recommend-nav{
+	width: 100%;
+	height: 58px;
+}
+.recommend .recommend-nav p{
+	color: black;
+	text-decoration:none;
+	float: left;
+	font: 21px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-nav .right{
+	float:right;
+	width: 36px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	margin-top: 17px;
+	font-weight: bold;
+}
+.recommend .recommend-nav .right a .iconfont{
+	color: #B0B0B0;
+	font-size: 20px;
+	line-height: 24px;
+	display: block;
+	text-align: center;
+}
+.recommend .recommend-nav .right a {
+	text-decoration: none;
+}
+.recommend .recommend-nav .right a:hover .iconfont{
+	color: #FF6700;
+}
+.recommend .recommend-nav .left{
+	float:right;
+	width: 36px;
+	height: 24px;
+	border: 1px solid #E0E0E0;
+	margin-top: 17px;
+	font-weight: bold;
+}
+.recommend .recommend-nav .left a:hover .iconfont{
+	color: #FF6700;
+}
+.recommend .recommend-nav .left a .iconfont{
+	color: #B0B0B0;
+	font-size: 20px;
+	line-height: 24px;
+	display: block;
+	text-align: center;
+}
+.recommend .recommend-nav .left a {
+	text-decoration: none;
+}
+.recommend .recommend-down{
+	width: 100%;
+	height: 320px;
+}
+.recommend .recommend-down .recommend-one{
+	width: 234px;
+	height: 300px;
+	float: left;
+	margin-right: 14px;
+	background-color: white;
+}
+.recommend .recommend-down .recommend-one a img{
+	margin-top: 35px;
+	margin-left: 45px;
+}
+.recommend .recommend-down .recommend-one a  p{
+	color: black;
+	text-align: center;
+	font: 15px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-down .recommend-one a {
+	text-decoration: none;
+}
+.recommend .recommend-down .recommend-one .price{
+	color: #FF6709;
+	text-align: center;
+	font: 15px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-down .recommend-one .rate{
+	color: #B0B0B0;
+	text-align: center;
+	font: 13px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-down .recommend-five{
+	width: 234px;
+	height: 300px;
+	float: left;
+	background-color: white;
+}
+.recommend .recommend-down .recommend-five a img{
+	margin-top: 35px;
+	margin-left: 45px;
+}
+.recommend .recommend-down .recommend-five a  p{
+	color: black;
+	text-align: center;
+	font: 15px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-down .recommend-five a {
+	text-decoration: none;
+}
+.recommend .recommend-down .recommend-five .price{
+	color: #FF6709;
+	text-align: center;
+	font: 15px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-down .recommend-five .rate{
+	color: #B0B0B0;
+	text-align: center;
+	font: 13px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.recommend .recommend-down .recommend-five:hover{
+	transform: translate3d(0,-2px,0px);
+			transition:all .2s;
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+.recommend .recommend-down .recommend-one:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+			transition:all .2s;
+}
+/*热评产品*/
+.buzz{
+	width: 1226px;
+	height: 473px;
+	margin: 0 auto;
+}
+.buzz p{
+	color: black;
+	text-decoration: none;
+	font: 22px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.buzz .buzz-down{
+	width: 100%;
+	height: 415px;
+}
+.buzz .buzz-down .buzz-one{
+	width: 296px;
+	height: 415px;
+	float: left;
+	margin-right: 12px;
+	position: relative;
+	background-color: white;
+}
+.buzz .buzz-down .buzz-one a img{
+	width: 296px;
+	height: 226px;
+}
+.buzz .buzz-down .buzz-one a{
+	text-decoration: none;
+}
+.buzz .buzz-down .buzz-one a p{
+	color: black;
+	display: block;
+	margin:25px 25px 20px 25px;
+	font: 14px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.buzz .buzz-down .buzz-one .from{
+	color: #B0B0B0 ;
+	display: block;
+	position: absolute;
+	bottom: 43px;
+	left: 25px;
+	font: 13px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.buzz .buzz-down .buzz-one .bottom{
+	width: 240px;
+	height: 21px;
+	position: absolute;
+	left: 25px;
+	bottom: 8px;
+}
+.buzz .buzz-down .buzz-one .bottom a{
+	font: 13px/21px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+	float: left;
+	padding-right: 10px;
+}
+.buzz .buzz-down .buzz-one .bottom .diver{
+	width: 1px ;
+	height: 15px;
+	background-color: #E0E0E0;
+	float: left;
+	margin-top: 2px;
+}
+.buzz .buzz-down .buzz-one .bottom .price{
+	font: 13px/21px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #FF6700;
+	float: left;
+	padding-left: 10px;
+}
+.buzz .buzz-down .buzz-three{
+	width: 296px;
+	height: 415px;
+	float: left;
+	background-color: white;
+}
+.buzz .buzz-down .buzz-three a img{
+	width: 296px;
+	height: 226px;
+}
+.buzz .buzz-down .buzz-three a{
+	text-decoration: none;
+}
+.buzz .buzz-down .buzz-three a p{
+	color: black;
+	display: block;
+	margin:25px 25px 20px 25px;
+	font: 14px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.buzz .buzz-down .buzz-three .from{
+	color: #B0B0B0 ;
+	display: block;
+	margin-left: 25px;
+	font: 13px/25px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.buzz .buzz-down .buzz-three .bottom{
+	width: 240px;
+	height: 21px;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+.buzz .buzz-down .buzz-three .bottom a{
+	font: 13px/21px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+	float: left;
+	padding-right: 10px;
+}
+.buzz .buzz-down .buzz-three .bottom .diver{
+	width: 1px ;
+	height: 15px;
+	background-color: #E0E0E0;
+	float: left;
+	margin-top: 2px;
+}
+.buzz .buzz-down .buzz-three .bottom .price{
+	font: 13px/21px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #FF6700;
+	float: left;
+	padding-left: 10px;
+}
+.buzz .buzz-down .buzz-three:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+			transition:all .2s
+}
+.buzz .buzz-down .buzz-one:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+		transition:all .2s
+}
+/*内容*/
+.details{
+	width: 1226px;
+	height: 478px;
+	margin: 15px	auto ;
+}
+.details .nav{
+	width: 100%;
+	height: 58px;
+	font: 22px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: black;
+}
+.details .bottom{
+	width: 1239px;
+	height: 420px;
+	float: right;
+}
+.details .bottom .details-one{
+	width: 296px;
+	height: 420px;
+	border-top:1px solid #FFAC13;
+	margin-left: 13px;
+	float: left;
+	background-color: white;
+	position: relative;
+}
+.details .bottom .details-one .left{
+	width: 21px;
+	height: 48px;
+	background-color: #DCDCDC;
+	float: left;
+	text-decoration: none;
+	position: absolute;
+	left: 0px;
+	top: 185px;
+}
+.details .bottom .details-one .left:hover{
+	background-color: rgba(66,66,66,0.6);
+}
+.details .bottom .details-one .left .iconfont{
+	font-weight: bold;
+	color: white;
+	line-height: 48px;
+}
+.details .bottom .details-one .right {
+	width: 21px;
+	height: 48px;
+	background-color: #DCDCDC;
+	float: left;
+	text-decoration: none;
+	position: absolute;
+	right: 0px;
+	top: 185px;
+}
+.details .bottom .details-one .right:hover{
+	background-color: rgba(66,66,66,0.6);
+}
+.details .bottom .details-one .right .iconfont{
+	font-weight: bold;
+	color: white;
+	line-height: 48px;
+}
+.details .bottom .details-one  div .book{
+	text-decoration: none;
+	color: #FFAC13;
+	display:block;
+	margin-top: 30px;
+	margin-left: 120px;
+	font: 18px/45px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.details .bottom .details-one  div .up .first{
+	color: black;
+	text-align: center;
+	font: 20px/40px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.details .bottom .details-one  div .up {
+	text-decoration: none;
+}
+.details .bottom .details-one  div .up .second{
+	color: #B0B0B0;
+	display: block;
+	margin: 5px 45px 5px 45px;
+	text-align: center;
+	font: 12px/20px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.details .bottom .details-one  div .up .third{
+	color: black;
+	position: absolute;
+	top: 155px;
+	left: 125px;
+	text-align: center;
+	font: 13px/40px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.details .bottom .details-one  div .up img{
+	width: 216px;
+	height: 154px;
+	display: block;
+	margin: 50px 35px;
+}
+.details .bottom .details-one  div .one{
+	width: 12px;
+	height: 12px;
+	border: 2px solid #FFAC13;
+	border-radius: 10px;
+	position: absolute;
+	left: 98px;
+	bottom: 27px;
+	float: left;
+
+}
+.details .bottom .details-one  div .two{
+	width: 8px;
+	height: 8px;
+	background-color:#B0B0B0;
+	border-radius: 10px;
+	float: right;
+	position: absolute;
+	left: 128px;
+	bottom: 30px;
+}
+.details .bottom .details-one  div .three{
+	width: 8px;
+	height: 8px;
+	background-color:#B0B0B0;
+	border-radius: 10px;
+	float: right;
+	position: absolute;
+	left: 153px;
+	bottom: 30px;
+}
+.details .bottom .details-one  div .four{
+	width: 8px;
+	height: 8px;
+	background-color:#B0B0B0;
+	border-radius: 10px;
+	float: right;
+	position: absolute;
+	left: 176px;
+	bottom: 30px;
+}
+.details .bottom .details-one div  a:hover {
+	background-color: #FFAC13;
+}
+.details .bottom .details-one:hover{
+	transform: translate3d(0,-2px,0px);
+	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+	transition:all .2s;
+}
+/*视频*/
+.video{
+	width: 1226px;
+	height: 357px;
+ 	margin: 0 auto;
+}
+.video .nav{
+	width: 1226px;
+	height: 58px;
+}
+.video .nav .nav-left{
+	color: black;
+	float: left;
+	font: 22px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.video .nav .iconfont{
+	font-size: 24px;
+	color: #B0B0B0;
+	float: right;
+	line-height: 58px;
+}
+.video .nav .nav-right{
+	color: black;
+	float: right;
+	padding-right: 10px;
+	font: 16px/58px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.video .nav a:hover .iconfont{
+	color: #FF6700;
+}
+.video .nav a:hover .nav-right{
+	color: #FF6700;
+}
+.video .down{
+	width: 1239px;
+	height: 285px;
+	float: right;
+}
+.video .down .one{
+	width: 296px;
+	height: 285px;
+	margin-left: 13px;
+	background-color: white;
+	position: relative;
+	float: left;
+}
+.video .down .one a img{
+	width: 296px;
+	height: 180px;
+}
+.video .down .one a .iconfont{
+	font-size: 30px;
+	text-decoration: none;
+	color:white;
+	position: absolute;
+	left: 20px;
+	bottom: 110px;
+}
+.video .down .one a .iconfont:hover{
+	color:  #FF6700;
+}
+.video .down .one a {
+	text-decoration: none;
+}
+.video .down .one a span{
+	display: block;
+	color:black;
+	margin-top: 20px;
+	margin-left: 40px;
+	font: 14px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.video .down .one p{
+	color: #B0B0B0;
+	text-align: center;
+	font: 13px/20px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.footer-over{
+	width: 100%;
+	height: 465px;
+	margin-top: 15px;
+	background-color: white;
+}
+.footer-over .center{
+	width: 1226px;
+	margin: 0 auto;
+}
+.footer-over .center .footer-one{
+	width: 1226px;
+	height: 20px;
+	margin-top: 30px;
+	float: left;
+}
+.footer-over .center .footer-one li{
+	width: 244px;
+	height: 100%;
+	border-right: 1px solid #E0E0E0;
+	float: left;
+	text-align: center;
+}
+.footer-over .center .footer-one li a{
+	text-decoration: none;
+	color: #616161;
+	font: 18px/20px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.footer-over .center .footer-one #point{
+	width: 244px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	border-right: 1px solid white ;
+}
+.footer-over .center .footer-one li a:hover{
+	color:  #FF6700;
+}
+.footer-over .center .footer-two{
+	width: 100%;
+	height:177px;
+	float: left;
+	margin-top: 34px;
+	border-top: 1px solid #E0E0E0;
+	position: relative;
+}
+.footer-over .center .footer-two .left{
+	width: 977px;
+	height: 140px;
+	border-right: 1px solid #E0E0E0;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+.footer-over .center .footer-two .left .one{
+	width: 100%;
+	height: 25px;
+	float: left;
+}
+.footer-over .center .footer-two .left .one li{
+	float: left;
+	padding-right: 101px;
+	color: #424242;
+	font: 15px/20px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.footer-over .center .footer-two .left .two{
+	width: 977px;
+	height: 115px;
+	float: left;
+}
+.footer-over .center .footer-two .left .two {
+	padding-top: 20px;
+}
+.footer-over .center .footer-two .left .two li a {
+	text-decoration: none;
+	color: #757575;
+	float: left;
+	padding-right: 110px;
+	font: 13px/30px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.footer-over .center .footer-two .left .two li a:hover{
+	color:  #FF6700;
+}
+.footer-over .footer-two .right{
+	width: 248px;
+	height: 140px;
+	float: right;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.footer-over .footer-two .right .number{
+   	font:22px/2 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-align: center;
+	color: #FF6709;
+}
+.footer-over .footer-two .right .week{
+   	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-align: center;
+	color: #616161;
+}
+.footer-over .footer-two .right .fare{
+   	font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	text-align: center;
+	color: #616161;
+}
+.footer-over .footer-two .right a{
+	width: 120px;
+	height: 32px;
+	border: 1px solid #FF6709;
+	display: block;
+	margin: 20px auto;
+	text-decoration: none;
+	color:#FF6709;
+	text-align: center;
+   	font:14px/32px  "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+ }
+.footer-over .footer-two .right a:hover{
+	background-color: #FF6709;
+	color: white;
+}
+.footer-three{
+	height: 60px;
+	width: 100%;
+	float: left;
+	margin-top: 60px;
+}
+.footer-three .logo{
+	width: 57px;
+	height: 57px;
+	background-color: #FF6709;
+	float: left;
+	margin-right: 10px;
+}
+.footer-three .nav{
+	width: 768px;
+	height: 20px;
+	float: left;
+}
+.footer-three .nav li a{
+	color: #757575;
+	float: left;
+	text-decoration: none;
+   	font:12px/20px  "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+ }
+ .footer-three .nav li a:hover{
+ 	color:  #FF6709;
+ }
+ .footer-three .nav li span{
+ 	color: #B0B0B0;
+ 	padding:0px 3px ;
+ 	float: left;
+ }
+  .footer-three p{
+  	float: left;
+  	text-decoration: none;
+  	color:  #B0B0B0;
+   	font:12px/20px  "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+ }
+  .footer-three p a{
+  	text-decoration: none;
+  		color:  #B0B0B0;
+  }
+  .footer-three p a:hover{
+  	color: #FF6709;
+ }
+   .footer-three .photo{
+   	width: 85px;
+   	height: 28px;
+	margin-top: 15px;
+	margin-left: 3px;
+   }
+.footer-four img{
+	margin-top: 33px;
+	margin-left: 480px;
+}
+
+.ck-slide {
+    width:1226px;
+    height:460px;
+    margin: auto;
+}
+.ck-slide ul.ck-slide-wrapper {
+    height:460px;
+}
+.ck-slide ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.ck-slide {
+    overflow:hidden;
+    position:relative;
+}
+.ck-slide ul.ck-slide-wrapper {
+    top:0;
+    left:0;
+    z-index:1;
+    margin:0;
+    padding:0;
+    position:absolute;
+}
+.ck-slide ul.ck-slide-wrapper li {
+    position:absolute;
+}
+.ck-slide .ck-ctrl {
+
+}
+.ck-slide .ck-prev{
+  top:50%;
+  z-index:2;
+  width:35px;
+  height:70px;
+  opacity:.15;
+  background:red;
+  margin-top:-35px;
+  position:absolute;
+  left: 237px !important;
+  border-radius:3px;
+  text-indent:-9999px;
+  background-repeat:no-repeat;
+  transition:opacity .2s linear 0s;
+}
+.ck-slide .ck-next {
+    top:50%;
+    z-index:2;
+    width:35px;
+    height:70px;
+    opacity:.15;
+    background:red;
+    margin-top:-35px;
+    position:absolute;
+    border-radius:3px;
+    text-indent:-9999px;
+    background-repeat:no-repeat;
+    transition:opacity .2s linear 0s;
+}
+.ck-slide .ck-prev {
+    left:5px;
+    background:url(../images/arrow-left.png) #000 no-repeat center center;
+}
+.ck-slide .ck-next {
+    right:5px;
+    background:url(../images/arrow-right.png) #000 no-repeat center center;
+}
+.ck-slidebox {
+    /*left:50%;*/
+    z-index:30;
+    position:absolute;
+    right: 35px;
+    bottom:12px;
+}
+/*.ck-slidebox ul {
+    height:20px;
+    padding:0 4px;
+    background:rgba(0,0,0,0.5);
+    border-radius:8px;
+}*/
+.ck-slidebox ul li {
+    float:left;
+    height:12px;
+    margin:4px 4px;
+}
+.ck-slidebox ul li em {
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    background:#757575;
+    border-radius:100%;
+    text-indent:-9999px;
+    display:block;
+}
+.ck-slidebox ul li.current em {
+    background:#FE6500;
+}
+.ck-slidebox ul li em:hover {
+    background:#FE6500;
+}
+.ck-slidebox .dot-wrap {
+
+}
+.ck-slidebox .slideWrap{
+}

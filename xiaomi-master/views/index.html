@@ -1,0 +1,3086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style/xiaomi.css">
+	<link rel="stylesheet" href="../style/normalize.css">
+	<link rel="stylesheet" href="../style/jquery-ui.css">
+	<!-- <script type="text/javascript" src="../js/jquery.min.js"></script> -->
+	<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/datepicker.js"></script>
+    <script type="text/javascript" src="../js/jquery.validate.js"></script>
+    <script type="text/javascript" src="../js/jquery.form.js"></script>
+	<script type="text/javascript" src="../js/slide.js"></script>
+	<script src="../js/demo.js"></script>
+</head>
+<body>
+		<div class="header">
+			<div class="nav-top">
+				<div class="nav-center">
+					<ul class="part-one">
+						<li>
+							<p ><a href="#">小米商城</a></p>		
+						</li>					
+						<li>
+							<p><a href="#">MIUI</a></p>
+						</li>
+						<li>
+							<p  class="mi-talk"  >
+								<a id="talk-one" href="#">米聊</a>		
+							</p>							
+						</li>
+						<li>
+							<p><a href="#">游戏</a></p>
+						</li>
+						<li>
+							<p><a id="read-one" href="#">多看阅读</a></p>
+						</li>
+						<li>
+							<p><a href="#">云服务</a></p>
+						</li>
+						<li>
+							<p><a href="#">金融</a></p>
+						</li>
+						<li>
+							<p><a href="#">小米网移动版</a></p>
+						</li>
+						<li>
+							<p><a href="#">问题反馈</a></p>
+						</li>
+						<li>
+							<p><a href="#">Select Region</a></p>
+						</li>
+					</ul>
+					<ul class="part-two">
+						<li>
+							<p><a href="#" id="reg_a">登录</a></p>
+						</li>
+						<li>
+							<p><a href="#" id="log_a">注册</a></p>
+						</li>
+						<li>
+							<p><a href="#">消息通知</a></p>
+						</li>
+					</ul>
+
+					<form action="123.html" id="reg">
+				      <ol class="reg-error"></ol>
+				      <p>
+				        <label for="user">账号:</label>
+				        <input type="text" name="user" class="text" id="user"></input>
+				        <span class="star">*</span>
+				      </p>
+				      <p>
+				        <label for="pass">密码:</label>
+				        <input type="password" name="pass" class="text" id="pass"></input>
+				        <span class="star">*</span>
+				      </p>
+				      <p>
+				        <label for="email">邮箱:</label>
+				        <input type="text" name="email" class="text" id="email"></input>
+				        <span class="star">*</span>
+				      </p>
+				      <p>
+				        <label for="">性别:</label>
+				        <input type="radio" name="sex" value="male" id="male"><label for="male">男</label></input>
+				        <input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+				      </p>
+				      <p>
+				        <label for="date">生日:</label>
+				        <input type="text" name="birthday" id="date" class="text" readonly="readonly">
+				      </p>
+				    </form>
+
+				    <form action="1111.html" id="log">
+				      <ol class="log-error"></ol>
+				      <p>
+				        <label for="log_user">用户名:</label>
+				        <input type="text" name="log_user" class="text" id="log_user"></input>
+				        <span class="star">*</span>
+				      </p>
+				      <p>
+				        <label for="log_pass">&emsp;密码:</label>
+				        <input type="password" name="log_pass" class="text" id="log_pass"></input>
+				        <span class="star">*</span>
+				      </p>
+				      <p class="week">
+				        <label for="expires">登陆后有效期一周</label>
+				      </p>
+				      <p class="week-checkbox">
+				        <input type="checkbox" name="expires" id="expires"/></input>
+				      </p>
+				    </form>
+
+
+					<div class="part-three">
+						<a class="gouwu" href="#">
+							<i class="iconfont">&#xe629;</i>
+							<span class="part-buy">购物车(0)</span>
+						</a>
+						<div class="shop-pull">
+							<div class="shop-title">
+									购物车中还没有商品，赶紧选购吧！
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="nav-two">
+				<div class="two-center">
+					<div class="two-logo"></div>
+					<ul id="talk"> 
+						<li>微信</li>
+						<li>QQ</li>
+						<li>sina</li>
+					</ul>	
+					<ul id="read"> 
+						<li>小米书刊</li>
+						<li>人生导师</li>
+						<li>网络历史</li>
+					</ul>
+					<ul class="two-list">
+						<li >
+							<a href="#">小米手机</a>
+							<div class="down-pull">
+								<ul>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+								</ul>
+
+							</div>
+						</li>
+						<li>
+							<a href="#">红米</a>
+							<div class="down-pull">
+								<ul>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li >
+							<a href="#">平板-笔记本</a>
+							<div class="down-pull">
+								<ul>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/baisexiaomi.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米手机5</p>
+										</a>
+										<p class="pull-money">1799元起</p>
+									</li>
+								</ul>
+
+							</div>
+						</li>
+						<li>
+							<a href="#">电视</a>
+							<div class="down-pull">
+								<ul>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+									<li class="first">
+										<a href="#">
+											<img class="pull-photo"
+											 	src="../images/xiaomimix.jpg" alt="">
+											<div class="diversity"></div>
+											<p class="pull-note">小米MIX</p>
+										</a>
+										<p class="pull-money">3999元起</p>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">盒子-影音</a></li>
+						<li><a href="#">路由器</a></li>
+						<li><a href="#">智能硬件</a></li>
+						<li><a href="#">服务</a></li>
+						<li><a id="community" href="#">社区</a></li>
+					</ul>
+					<div class="two-search">
+						<a class="search" href="#">
+							<i class="iconfont">&#xe630;</i>
+						</a>
+						<input type="text" >
+						<a class="mix" href="#">小米MIX</a>
+						<a class="TV" href="#">人工智能电视</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav-big">
+				<div class="ck-slide">
+			    <ul class="ck-slide-wrapper">
+			        <li>
+			            <a href="javascript:;"><img src="../images/xiaomi-1.jpg" alt="" style="width:1226px; height:460px;"></a>
+			        </li>
+
+			        <li style="display:none">
+			            <a href="javascript:;"><img src="../images/xiaomi-2.jpg" alt="" style="width:1226px; height:460px;"></a>
+			        </li>
+			        <li style="display:none">
+			            <a href="javascript:;"><img src="../images/xiaomi-3.jpg" alt="" style="width:1226px; height:460px;"></a>
+			        </li>
+			        <li style="display:none">
+			            <a href="javascript:;"><img src="../images/xiaomi-4.jpg" alt="" style="width:1226px; height:460px;" ></a>
+			        </li>
+			        <li style="display:none">
+			            <a href="javascript:;"><img src="../images/xiaomi-5.jpg" alt="" style="width:1226px; height:460px;"></a>
+			        </li>
+			    </ul>
+			    <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
+			    <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+			   <!--  <div class="ck-slidebox" >
+			        <div class="slideWrap" >
+			            <ul class="dot-wrap">
+			                <li class="current"><em>1</em></li>
+			                <li><em>2</em></li>
+			                <li><em>3</em></li>
+			                <li><em>4</em></li>
+			                <li><em>5</em></li>
+			            </ul>
+			        </div>
+			    </div> -->
+
+			   	<div class="photo-left">
+						<ul class="left-center">
+						<!-- 手机 电话卡 -->
+							<li class="phone">
+								<a class="card" href="#">手机 电话卡
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-one">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 笔记本 平板 -->
+							<li class="phone">
+								<a class="card" href="#">笔记本平板
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-two">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+				<!-- 电视盒子	 -->
+							<li class="phone">
+								<a class="card" href="#">电视 盒子
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-one">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 路由器 智能硬件 -->
+							<li class="phone">
+								<a class="card" href="#">路由器 智能硬件
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-two">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 移动电源 电池 插线板 -->
+							<li class="phone">
+								<a class="card" href="#">移动电源 电池 插线板
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-one">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 耳机 音箱 -->
+							<li class="phone">
+								<a class="card" href="#">耳机 音箱
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-two">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+				<!-- 保护套 贴膜	 -->
+							<li class="phone">
+								<a class="card" href="#">保护套 贴膜
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-one">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 线材 支架 存储卡 -->
+							<li class="phone">
+								<a class="card" href="#">线材 支架 存储卡
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-two">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 箱包 服饰 -->
+							<li class="phone">
+								<a class="card" href="#">箱包 服饰
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-one">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/Note4.jpg" alt="">
+											<p class="xiaomi-note">小米Note4</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 米兔 生活周边 -->
+							<li class="phone">
+								<a class="card" href="#">米兔 生活周边
+									<i class="iconfont">&#xe636;</i>
+								</a>
+								<ul class="photo-two">
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li><li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishoujiMax.jpg" alt="">
+											<p class="xiaomi-note">小米手机Max</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="Note" src="../images/xiaomishouji5.jpg" alt="">
+											<p class="xiaomi-note">小米手机5</p>
+										</a>
+										<div class="choose">
+											<a href="#">选购</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+
+
+				</div>
+
+
+					
+				<div class="center-pic">
+					<ul class="center-icon">
+						<li class="icon-one">
+							<a href="#">
+								<i class="iconfont">&#xe602;</i>
+								<p class="shopping">选购手机</p>
+							</a>
+						</li>
+						<li class="icon-one">
+							<a href="#">
+								<i class="iconfont">&#xe659;</i>
+								<p class="shopping">企业团购</p>
+							</a>
+						</li>
+						<li class="icon-one">
+							<a href="#">
+								<i class="iconfont">&#xe607;</i>
+								<p class="shopping">官翻产品</p>
+							</a>
+						</li>
+						<li class="icon-one">
+							<a href="#">
+								<i class="iconfont">&#xe60a;</i>
+								<p class="shopping">小米移动</p>
+							</a>
+						</li>
+						<li class="icon-one">
+							<a href="#">
+								<i class="iconfont">&#xe621;</i>
+								<p class="shopping">以旧换新</p>
+							</a>
+						</li>
+						<li class="icon-one">
+							<a href="#">
+								<i class="iconfont">&#xe65a;</i>
+								<p class="shopping">话费充值</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="center-right-pic">
+						<li>
+							<a href="#"><img src="../images/mifive.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="#"><img src="../images/mifour.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="#"><img src="../images/mi-bot.jpg" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 小米明星单品	 -->
+		<div class="main">
+			<div class="xiaomi-star">
+				<p>小米明星单品</p>
+				<div class="more">
+					<a href="#"><i class="iconfont">&#xe6ed;</i></a>
+				</div>
+				<div class="less">
+					<a href="#"><i class="iconfont">&#xe710;</i></a>
+				</div>
+			</div>
+			<ul class="xiaomi-roll">
+				<li class="roll-one">
+					<a href="#">
+						<img src="../images/bijiben.png" alt="">
+						<p>小米笔记本</p>
+					</a>
+					<p class="description">独立显卡、超轻薄、金属机身</p>
+					<p class="price">3499元</p>
+				</li>
+				<li class="roll-one">
+					<a href="#">
+						<img src="../images/shuihu-one.jpg" alt="">
+						<p>米家恒温电水壶</p>
+					</a>
+					<p class="description">快速沸腾，水温智能控制</p>
+					<p class="price">199元</p>
+				</li>
+				<li class="roll-one">
+					<a href="#">
+						<img src="../images/pro-ten.png" alt="">
+						<p>红米Pro 十核双摄</p>
+					</a>
+					<p class="description"> 双摄像头手机，像单反一样去拍照</p>
+					<p class="price">1099元起</p>
+				</li>
+				<li class="roll-one">
+					<a href="#">
+						<img src="../images/five-SP.png" alt="">
+						<p>小米5s Plus</p>
+					</a>
+					<p class="description">5.7英寸大屏双摄手机，拍照黑科技</p>
+					<p class="price">2299元起</p>
+				</li>
+				<li class="roll-five">
+					<a href="#">
+						<img src="../images/dianyuan.png" alt="">
+						<p>小米移动电源2</p>
+					</a>
+					<p class="description-five">双向快充，高密度锂聚合物电芯</p>
+					<p class="price-five">79元</p>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+					<!-- 智能硬件 -->
+			<div class="capacity">
+				<div class="capacity-one">
+					<p>智能硬件</p>
+					<a href="#">查看全部<i class="iconfont">&#xe69d;</i></a>
+				</div>
+				<div class="capacity-two">
+					<a href="#"><img class="capacity-left" src="../images/jingshui.jpg" alt=""></a>
+					<ul class="capacity-right">
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/jiqitu.jpg" alt="">
+								<p>米兔智能故事机</p>
+							</a>
+							<p class="chat">微信远程互动，智能语音</p>
+							<p class="price">199元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/jiqitu.jpg" alt="">
+								<p>米兔智能故事机</p>
+							</a>
+							<p class="chat">微信远程互动，智能语音</p>
+							<p class="price">199元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/jiqitu.jpg" alt="">
+								<p>米兔智能故事机</p>
+							</a>
+							<p class="chat">微信远程互动，智能语音</p>
+							<p class="price">199元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/jiqitu.jpg" alt="">
+								<p>米兔智能故事机</p>
+							</a>
+							<p class="chat">微信远程互动，智能语音</p>
+							<p class="price">199元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/luyouqione.jpg" alt="">
+								<p>小米路由器3</p>
+							</a>
+							<p class="chat">四天线设计，更快更强</p>
+							<p class="price">149元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/luyouqione.jpg" alt="">
+								<p>小米路由器3</p>
+							</a>
+							<p class="chat">四天线设计，更快更强</p>
+							<p class="price">149元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/luyouqione.jpg" alt="">
+								<p>小米路由器3</p>
+							</a>
+							<p class="chat">四天线设计，更快更强</p>
+							<p class="price">149元</p>
+						</li>
+						<li class="rabbit">
+							<p class="none">免邮费</p>
+							<a href="#">
+								<img src="../images/luyouqione.jpg" alt="">
+								<p>小米路由器3</p>
+							</a>
+							<p class="chat">四天线设计，更快更强</p>
+							<p class="price">149元</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+						<!-- 配件 -->
+			<div class="match">
+				<div class="match-nav">
+					<p class="left">搭配</p>
+					<ul class="right">
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">热门</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">耳机音箱</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">电源</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">电池存储卡</a>
+								<div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="match-photo">
+					<div class="match-left">
+						<a href="#"><img class="girl" src="../images/meinv.jpg" alt=""></a>
+						<a href="#"><img class="headset" src="../images/erjipro.jpg" alt=""></a>
+					</div>
+					<ul class="match-right">
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="canon">
+							<div class="left">
+								<a href="#">小米小钢炮</a>
+								<p>99元</p>
+							</div>
+							<a href="#"><img src="../images/gangpao.jpg" alt=""></a>
+						</li>
+						<li class="even-more">
+							<div class="left">
+								<a class="charact" href="#">浏览更多</a>
+								<a href="#">热门</a>
+							</div>
+							<a href="#"><i class="iconfont">&#xe69d;</i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+					<!-- 配件 -->
+			<div class="match">
+				<div class="match-nav">
+					<p class="left">配件</p>
+					<ul class="right">
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">热门</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">保护套</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">贴膜</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">其他配件</a>
+								<div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="match-photo">
+					<div class="match-left">
+						<a href="#"><img class="girl" src="../images/wurenji.jpg" alt=""></a>
+						<a href="#"><img class="headset" src="../images/chaxianban.jpg" alt=""></a>
+					</div>
+					<ul class="match-right">
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="canon">
+							<div class="left">
+								<a href="#">小米小钢炮</a>
+								<p>99元</p>
+							</div>
+							<a href="#"><img src="../images/gangpao.jpg" alt=""></a>
+						</li>
+						<li class="even-more">
+							<div class="left">
+								<a class="charact" href="#">浏览更多</a>
+								<a href="#">热门</a>
+							</div>
+							<a href="#"><i class="iconfont">&#xe69d;</i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+					<!-- 周边 -->
+			<div class="match">
+				<div class="match-nav">
+					<p class="left">周边</p>
+					<ul class="right">
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">热门</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">服装</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">米兔</a>
+								<div>
+								</div>
+							</div>
+						</li>
+						<li class="hot-pull">
+							<div class="hot">
+								<a href="#">生活周边</a>
+								<div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="match-photo">
+					<div class="match-left">
+						<a href="#"><img class="girl" src="../images/lvxingxiang.jpg" alt=""></a>
+						<a href="#"><img class="headset" src="../images/jiaozhen.jpg" alt=""></a>
+					</div>
+					<ul class="match-right">
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="right-bluetooth">
+							<a href="">
+								<img src="../images/lanye.jpg" alt="">
+								<p>小米随身蓝牙音箱</p>
+							</a>
+							<p class="price">69元</p>
+							<p class="evaluate">8237人评价</p>
+							<div class="red">
+								<a href="#">
+									<p class="one">东西很少，做工也很精致，电池待机也比想象的要好，值得入手</p>
+									<p class="two">来自 火星人 评价</p>
+								</a>
+							</div>
+						</li>
+						<li class="canon">
+							<div class="left">
+								<a href="#">小米小钢炮</a>
+								<p>99元</p>
+							</div>
+							<a href="#"><img src="../images/gangpao.jpg" alt=""></a>
+						</li>
+						<li class="even-more">
+							<div class="left">
+								<a class="charact" href="#">浏览更多</a>
+								<a href="#">热门</a>
+							</div>
+							<a href="#"><i class="iconfont">&#xe69d;</i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+					<!-- 为你推荐 -->
+			<div class="recommend">
+				<div class="recommend-nav">
+					<p>为你推荐</p>
+					<div class="right">
+						<a href="#"><i class="iconfont">&#xe6ed;</i></a>
+					</div>
+					<div class="left">
+						<a href="#"><i class="iconfont">&#xe710;</i></a>
+					</div>
+				</div>
+				<ul class="recommend-down">
+					<li class="recommend-one">
+						<a href="#">
+							<img src="../images/air.jpg" alt="">
+							<p>小米笔记本Air 13.3英寸</p>
+						</a>
+						<p class="price">4999元</p>
+						<p class="rate">3089好评</p>
+					</li>
+					<li class="recommend-one">
+						<a href="#">
+							<img src="../images/shouhuan-one.jpg" alt="">
+							<p>小米手环 2</p>
+						</a>
+						<p class="price" >149元</p>
+						<p  class="rate">6.4万人好评</p>
+					</li>
+					<li class="recommend-one">
+						<a href="#">
+							<img src="../images/wurenji-one.jpg" alt="">
+							<p>小米无人机 1080p版</p>
+						</a>
+						<p class="price" >2499元</p>
+						<p  class="rate">167人好评</p>
+					</li>
+					<li class="recommend-one">
+						<a href="#">
+							<img src="../images/dianshi3S.jpg" alt="">
+							<p>小米电视3s  55英寸影院版</p>
+						</a>
+						<p class="price" >5999元</p>
+						<p  class="rate">0人好评</p>
+					</li>
+					<li class="recommend-five">
+						<a href="#">
+							<img src="../images/yidong-two.jpg" alt="">
+							<p>10000mAh小米移动电源2</p>
+						</a>
+						<p class="price" >79元</p>
+						<p class="rate" >6896人好评</p>
+					</li>
+				</ul>
+			</div>
+					<!-- 热评产品 -->
+			<div class="buzz">
+				<p>热评产品</p>
+				<ul class="buzz-down">
+					<li class="buzz-one">
+						<a href="#">
+							<img src="../images/inside/shouji-one.jpg" alt="">
+							<p>真心的好，实在，非常非常非常满意，谢谢小米。</p>
+						</a>
+						<p class="from">来自于 常有 的评价</p>
+						<div class="bottom">
+							<a href="#">小米MAX全网版</a>
+							<div class="diver"></div>
+							<div class="price">699元</div>
+						</div>
+					</li>
+					<li class="buzz-one">
+						<a href="#">
+							<img src="../images/inside/shouji-two.jpg" alt="">
+							<p>真非常好,给孩子的公主房用上了,空气一直很清新,噪声很低,孩子很喜欢.</p>
+						</a>
+						<p class="from">来自于 米果果大叔 的评价</p>
+						<div class="bottom">
+							<a href="#">米兔定位电话</a>
+							<div class="diver"></div>
+							<div class="price">699元</div>
+						</div>
+					</li>
+					<li class="buzz-one">
+						<a href="#">
+							<img src="../images/inside/shouji-four.jpg" alt="">
+							<p>包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...</p>
+						</a>
+						<p class="from">来自于 HZG 的评价</p>
+						<div class="bottom">
+							<a href="#">米家压力IH电饭煲 </a>
+							<div class="diver"></div>
+							<div class="price">999元</div>
+						</div>
+					</li>
+					<li class="buzz-three">
+						<a href="#">
+							<img src="../images/inside/shouji-three.jpg" alt="">
+							<p>非常好用，孩子使用防止沉迷于电话影响学习。做工很好，定位基本准确，通话清晰。如果加入时间显示就更完美...</p>
+						</a>
+						<p class="from">来自于 178576259 的评价</p>
+						<div class="bottom">
+							<a href="#">米兔定位电话</a>
+							<div class="diver"></div>
+							<div class="price">169元</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+					<!-- 内容 -->
+			<div class="details">
+				<div class="nav">内容</div>
+				<ul class="bottom">
+					<li class="details-one">
+						<a class="left" href="#"><i class="iconfont">&#xe710;</i></a>
+						<div>
+							<p class="book">图书</p>
+							<a  class="up" href="#">
+								<p class="first">哈利·波特与魔法石</p>
+								<p class="second">哈利·波特来了</p>
+								<p class="third">限时优惠</p>
+								<img src="../images/inside/harry.jpg" alt="">
+							</a>
+							<a class="one" href="#"></a>
+							<a class="two" href="#"></a>
+							<a class="three" href="#"></a>
+							<a class="four" href="#"></a>
+						</div>
+						<a class="right" href="#"><i class="iconfont">&#xe6ed;</i></a>
+					</li>
+					<li class="details-one">
+						<a class="left" href="#"><i class="iconfont">&#xe710;</i></a>
+						<div>
+							<p class="book">MIUI主题</p>
+							<a  class="up" href="#">
+								<p class="first">纸间梦境</p>
+								<p class="second">崭新的九月，要有全新的梦，小米主题带你探寻纸间梦境。</p>
+								<p class="third">免费</p>
+								<img src="../images/inside/book-two.jpg" alt="">
+							</a>
+							<a class="one" href="#"></a>
+							<a class="two" href="#"></a>
+							<a class="three" href="#"></a>
+							<a class="four" href="#"></a>
+						</div>
+						<a class="right" href="#"><i class="iconfont">&#xe6ed;</i></a>
+					</li>
+					<li class="details-one">
+						<a class="left" href="#"><i class="iconfont">&#xe710;</i></a>
+						<div>
+							<p class="book">游戏</p>
+							<a  class="up" href="#">
+								<p class="first">剑侠世界/p>
+								<p class="second">一生不容错过的浪漫武侠！！</p>
+								<p class="third">免费</p>
+								<img src="../images/inside/jian-three.jpg" alt="">
+							</a>
+							<a class="one" href="#"></a>
+							<a class="two" href="#"></a>
+							<a class="three" href="#"></a>
+							<a class="four" href="#"></a>
+						</div>
+						<a class="right" href="#"><i class="iconfont">&#xe6ed;</i></a>
+					</li>
+					<li class="details-one">
+						<a class="left" href="#"><i class="iconfont">&#xe710;</i></a>
+						<div>
+							<p class="book">应用</p>
+							<a  class="up" href="#">
+								<p class="first">2015年度应用</p>
+								<p class="second">2015年度应用</p>
+								<p class="third">免费</p>
+								<img src="../images/inside/year-four.png" alt="">
+							</a>
+							<a class="one" href="#"></a>
+							<a class="two" href="#"></a>
+							<a class="three" href="#"></a>
+							<a class="four" href="#"></a>
+						</div>
+						<a class="right" href="#"><i class="iconfont">&#xe6ed;</i></a>
+					</li>
+				</ul>
+			</div>
+					<!-- 视频 -->
+			<div class="video">
+				<div class="nav">
+					<p class="nav-left">视频</p>
+					<a href="#">
+						<i class="iconfont">&#xe69d;</i>
+						<p class="nav-right">查看全部</p>
+					</a>
+				</div>
+				<ul class="down">
+					<li class="one">
+						<a href="#">
+							<img src="../images/inside/video-one.jpg" alt="冰山图">
+							<i class="iconfont">&#xe612;</i>
+							<span>梁朝伟讲述小米Note2的冰山理论</span>
+						</a>
+						<p>第一眼看到的美，只是全部创作的八分之一</p>
+					</li>
+					<li class="one">
+						<a href="#">
+							<img src="../images/inside/video-two.jpg" alt="冰山图">
+							<i class="iconfont">&#xe612;</i>
+							<span>小米MIX 概念手机背后的故事</span>
+						</a>
+						<p>雷总亲自讲述小米MIX 的诞生</p>
+					</li>
+					<li class="one">
+						<a href="#">
+							<img src="../images/inside/video-three.jpg" alt="冰山图">
+							<i class="iconfont">&#xe612;</i>
+							<span>梁晨为你讲述小米互联网音箱</span>
+						</a>
+						<p>产品介绍还不够？来看看梁晨的视频演示</p>
+					</li>
+					<li class="one">
+						<a href="#">
+							<img src="../images/inside/video-four.jpg" alt="冰山图">
+							<i class="iconfont">&#xe612;</i>
+							<span>梁晨为你讲述新版小米商城App</span>
+						</a>
+						<p>除了画风更美之外，到底还有哪些更新没有被发现？</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-over">
+			<div class="center">
+				<ul class="footer-one">
+					<li><a href="#">预约维修服务</a> </li>
+					<li><a href="#">7天无理由退货</a></li>
+					<li><a href="#">15天免费换货</a></li>
+					<li><a href="#">满150元包邮</a></li>
+					<li id="point"><a href="#">520余家售后网点</a></li>
+				</ul>
+				<div class="footer-two">
+					<div class="left">
+						<ul class="one">
+							<li>帮助中心</li>
+							<li>服务支持</li>
+							<li>线下门店</li>
+							<li>关于小米</li>
+							<li>关注我们</li>
+							<li>特色服务</li>
+						</ul>
+						<ul class="two">
+							<li><a href="#">账户管理</a></li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">小米之家</a></li>
+							<li><a href="#">了解小米</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">F 码通道</a></li>
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">自助服务</a></li>
+							<li><a href="#">服务网点</a></li>
+							<li><a href="#">加入小米</a></li>
+							<li><a href="#">小米部落</a></li>
+							<li><a href="#">小米移动</a></li>
+							<li><a href="#">订单操作</a></li>
+							<li><a href="#">相关下载</a></li>
+							<li><a href="#">零售网点</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">官方微信</a></li>
+							<li><a href="#">防伪查询</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<p class="number">400-100-5678</p>
+						<p class="week">周一至周日 8:00-18:00 </p>
+						<p class="fare">（仅收市话费）</p>
+						<a href="#">24小时在线客服</a>
+					</div>
+				</div>
+				<div class="footer-three">
+					<img class="logo" src="../images/mi-logo.png" alt="logo">
+					<ul class="nav">
+						<li><a href="#">小米商城</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">MIUI</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">米聊</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">多看书城</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">小米路由器</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">视频电话</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">小米后院</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">小米天猫店</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">小米淘宝直营店</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">小米网盟</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">问题反馈</a>
+							<span>|</span>
+						</li>
+						<li><a href="#">Select Region</a>
+						</li>
+					</ul>
+					<p>
+						<a href="#">&copy;mi.com</a> 京ICP证110507号
+						<a href="#"> 京ICP备10046444号 </a>
+						<a href="#"> 京公网安备11010802020134号 </a>
+						<a href="#"> 京网文[2014]0059-0009号  </a>
+					</p>
+					<p>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+					<img class="photo"  src="../images/seal.png" alt="">
+					<img class="photo" src="../images/shifan.png" alt="">
+					<img class="photo" src="../images/xinyong.png" alt="">
+					<img class="photo" src="../images/jiaoyi.png" alt="">
+				</div>
+				<div class="footer-four">
+					<img src="../images/inside/fasao.png" alt="">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
